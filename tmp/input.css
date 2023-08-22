@@ -1,0 +1,352 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: Montserrat, system-ui, sans-serif;
+    }
+}
+
+/* HERO text section*/
+.hero_heading-wrap {
+    @apply flex flex-col py-_40 md:w-1/2 max-md:ml-_60 md:py-_75 md:pr-_14 md:ml-_30 lg:py-_80 lg:ml-_45 wide:items-start wide:py-_145 xl:ml-_89
+}
+
+.hero_h1 {
+    @apply text-base mb-5 md:text-2xl lg:max-w-sm wide:text-6xl wide:max-w-none wide:mb-_44
+}
+
+.hero_heading-text {
+    @apply text-xxs md:text-sm lg:text-base lg:max-w-sm wide:mb-_72
+}
+
+.hero_links-list {
+    @apply flex mb-1 mt-4 md:mt-_40 ml-2 mr-2 space-x-2 wide:space-x-9 wide:m-0
+}
+
+.hero_links-button {
+    @apply font-Inter py-2 px-2 text-xxs md:text-xs lg:text-base xl:py-3 xl:px-6 text-green-900 hover:text-gray-100 block hover:bg-green-900 border border-green-900 rounded-3xl transition-colors duration-300
+}
+
+.hero_links-button svg {
+    @apply max-lg:w-_12 max-lg:h-_13
+}
+
+.flex-carousel-item {
+    @apply block md:!flex md:!flex-row-reverse
+}
+
+.change .line-1 {
+    @apply -translate-x-_4 -translate-y-_6 -rotate-45;
+}
+
+.change .line-2 {
+    @apply opacity-0;
+}
+
+.change .line-3 {
+    @apply -translate-x-_4 -translate-y-_3 rotate-45;
+}
+
+.invisible {
+    @apply translate-x-150;
+}
+
+/*Page headings, typography*/
+.section_heading-h2 {
+    @apply text-base font-medium md:text-2xl mb-6 xl:text-5xl
+}
+
+.section_heading-h2-suffix {
+    @apply font-Inter font-medium text-base md:text-2xl xl:text-5xl
+}
+
+.section_article {
+    @apply font-Inter text-xxs md:text-xs text-justify tracking-semitight
+}
+
+/* Buttons*/
+.filled_button-link {
+    @apply py-3 px-5 border border-lightBeige rounded-3xl text-xxs md:text-xs lg:py-_12 lg:px-_22 lg:text-base
+}
+
+/*Oferta page*/
+.services_list {
+    @apply flex max-md:flex-col max-md:space-y-3 md:mt-10 md:flex-row md:space-x-7 lg:m-0
+}
+
+.services_list-item {
+    @apply flex flex-wrap p-3 transition-transform duration-100 ease-in md:py-_22 md:px-_20 lg:px-7 lg:py-8 rounded-2xl bg-white lg:h-_390 shadow-prodListItems
+}
+
+.services_list-item:hover,
+.services_list-item:focus {
+    @apply scale-105
+}
+
+.services_list-item:active {
+    @apply scale-1
+}
+
+.services_list-item-head_wrap {
+    @apply w-1/3 md:w-full flex max-md:justify-between max-md:flex-col md:flex-wrap
+}
+
+.services_list-item-icon_wrap {
+    @apply flex md:items-center md:w-full md:h-_36 md:pb-_25
+}
+
+.services_list-item-heading {
+    @apply font-medium leading-115% -tracking-0088 text-xs md:text-xl lg:text-28px
+}
+
+.services_list-item-article_wrap {
+    @apply w-2/3 md:w-full md:flex md:flex-wrap md:mt-_25 lg:mt-_12
+}
+
+.services_list-item-article_text {
+    @apply text-xxs md:text-xxs md:mb-_25 lg:text-14px
+}
+
+.services_list-item-article_link {
+    @apply font-Inter text-6px mb-0 mt-auto md:text-xxs lg:text-base
+}
+
+/*Oferta modal window*/
+.on-oferta {
+    @apply scale-y-001 scale-x-0 animate-unfoldIn;
+}
+
+.oferta-modal-on {
+    @apply scale-0 animate-zoom-in;
+}
+
+.out-oferta {
+    @apply scale-1 animate-unfoldOut;
+}
+
+.oferta-modal-off {
+    @apply scale-1 animate-unfoldOut;
+}
+
+/* Oferta modal window form*/
+.oferta-text-label {
+    @apply ml-auto mr-0 w-2/3;
+}
+
+.input_label {
+    @apply text-xs md:text-14px lg:text-18px xl:text-20px whitespace-nowrap
+}
+
+.oferta-text-input {
+    @apply p-2 text-xs md:text-base border-4 border-greenSubs bg-beige rounded-2xl w-full;
+}
+
+.range-label {
+    @apply w-full
+}
+
+.oferta-range-input {
+    @apply appearance-none bg-transparent cursor-pointer w-3/4;
+}
+
+#sqaure-user-input {
+    @apply absolute top-_18 right-_10 w-_46 lg:w-_64 h-_30 p-2
+}
+
+.oferta-range-input:focus {
+    @apply outline-none;
+}
+
+.oferta-range-input::-webkit-slider-runnable-track {
+    @apply bg-greenSubs rounded-lg h-2;
+}
+
+.oferta-range-input::-webkit-slider-thumb {
+    @apply appearance-none -mt-1 rounded-lg h-4 w-4;
+}
+
+.oferta-range-input:focus::-webkit-slider-thumb {
+    @apply outline-2 outline-red-200 outline-offset-1;
+}
+
+.radio-label {
+    @apply relative cursor-pointer;
+}
+
+.radio-label .radio-input {
+    @apply absolute -z-10 opacity-0;
+}
+
+.indicator {
+    @apply absolute top-_2 left-0 h-_20 w-_20 bg-gray-500 border rounded-full;
+}
+
+.radio-label:hover .radio-input~.indicator,
+.radio-label:focus .radio-input~.indicator {
+    @apply bg-indigo-700;
+}
+
+.radio-label .radio-input:checked~.indicator {
+    @apply bg-greenSubs
+}
+
+.radio-label:hover .radio-input:checked~.indicator,
+.radio-label .radio-input:checked:focus~.indicator {
+    @apply bg-yellow-400
+}
+
+.indicator:after {
+    @apply content-[''] absolute hidden
+}
+
+.radio-label .radio-input:checked~.indicator:after {
+    @apply block
+}
+
+.radio-label-ctrl .indicator {
+    @apply rounded-full
+}
+
+.radio-label-ctrl .indicator:after {
+    @apply left-_7 top-_7 h-_6 w-_6 rounded-full bg-white transition-all duration-300
+}
+
+.radio-label-ctrl .indicator:before {
+    @apply content-[''] block absolute top-0 left-0 w-12 h-12 -ml-6 -mt-6 bg-green-500 rounded-3xl opacity-60 z-50 scale-0
+}
+
+.radio-label-ctrl .radio-input+.indicator:before {
+    @apply animate-SRipple
+}
+
+.radio-label-ctrl .radio-input:checked+.indicator:before {
+    @apply animate-SRippleDup
+}
+
+.oftr-checkbox:not(:checked),
+.oftr-checkbox:checked {
+    @apply absolute -left-_9999
+}
+
+.oftr-checkbox:not(:checked)+.chckbx-label,
+.oftr-checkbox:checked+.chckbx-label {
+    @apply relative pl-_30 cursor-pointer mb-_4 inline-block text-base
+}
+
+/* checkbox aspect */
+.oftr-checkbox:not(:checked)+.chckbx-label:before,
+.oftr-checkbox:checked+.chckbx-label:before {
+    @apply content-none absolute top-0 left-0 w-_22 h-_22 border border-solid border-green-700 bg-white rounded-md shadow-chckBxShadow
+}
+
+/* checked mark aspect */
+.oftr-checkbox:not(:checked)+.chckbx-label:after,
+.oftr-checkbox:checked+.chckbx-label:after {
+    @apply content-['✔'] absolute top-0 left-_2 text-lg text-green-600 transition-all duration-200
+}
+
+/* checked mark aspect changes */
+.oftr-checkbox:not(:checked)+.chckbx-label:after {
+    @apply opacity-0 scale-0
+}
+
+.oftr-checkbox:checked+.chckbx-label:after {
+    @apply opacity-100 scale-100
+}
+
+/* accessibility */
+.oftr-checkbox:not(:checked):focus+.chckbx-label:before,
+.oftr-checkbox:checked:focus+.chckbx-label:before {
+    @apply border-dotted border-2 border-green-500
+}
+
+/* hover style just for information */
+.chckbx-label:hover:before {
+    @apply border-2 border-solid border-green-700
+    /*bg-danger-200;*/
+}
+
+.submit-btn-wrapper{
+    @apply relative w-full h-full
+}
+.submit-btn{
+    @apply font-Montserrat absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-_170 h-_40 text-lg border-2 border-solid border-indigo-500 bg-slate-400 text-indigo-500 rounded-3xl cursor-pointer overflow-hidden transition-all duration-300
+}
+.submit-btn:hover {
+    @apply bg-indigo-500 text-white
+}
+.submit-btn span {
+    @apply opacity-100 visible transition-all duration-300
+}
+
+.success {
+    @apply absolute top-0 left-0 w-full h-full bg-white rounded-full z-10 opacity-0 hidden transition-all duration-300
+    
+}
+
+.success svg {
+    @apply w-_20 h-_20 fill-yellow-300 origin-5050 -translate-y-1/2 rotate-0 scale-0 transition-all duration-300
+
+}
+.submit-btn.is_active{
+    @apply w-_40 h-_40
+}
+.submit-btn.is_active .success{
+    @apply opacity-100 visible
+}
+
+.submit-btn.is_active .success svg {
+    @apply mt-half -translate-y-1/2 rotate-720 scale-1
+
+}
+.submit-btn.is_active span {
+    @apply opacity-0 hidden
+}
+*/
+.\!block {
+    @apply block md:flex md:flex-row-reverse
+}
+
+.button-submit,
+.tick,
+.button-cancel,
+.x-tick {
+    @apply flex justify-center items-center
+}
+
+.button-submit {
+    @apply w-_200 h-_60 bg-greenSubs rounded-md transition-all duration-300 ease-submitBtn-trnsition
+}
+
+.button-submit svg {
+    @apply rotate-180 transition-all duration-500
+}
+
+.button-submit__circle {
+    @apply w-_80 h-_80 bg-green-400 rounded-full -rotate-180
+}
+
+.button-submit:hover,
+.button-cancel:hover {
+    @apply cursor-pointer
+}
+
+.tick,
+.x-tick {
+    @apply text-white text-4xl transition-all duration-900
+}
+
+.button-cancel {
+    @apply bg-red-600 w-_200 h-_60 rounded-md transition-all duration-300 ease-submitBtn-trnsition
+}
+
+.button-cancel svg {
+    @apply -rotate-180 transition-all duration-500
+}
+
+.button-cancel__circle {
+    @apply w-_80 h-_80 bg-red-600 rounded-full rotate-180
+}
+

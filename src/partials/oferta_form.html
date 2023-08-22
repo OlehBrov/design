@@ -1,0 +1,166 @@
+<div
+  id="oferta-wrap"
+  class="fixed flex h-full w-full top-0 left-0 scale-0 z-50"
+>
+  <div class="oferta-wrap-background bg-greenTr flex w-full">
+    <div
+      class="oferta-modal my-0 mx-auto py-4 px-3 flex flex-wrap w-full lg:w-1/2"
+    >
+      <form
+        id="oferta-form"
+        class="p-4 rounded-xl flex flex-col gap-4 bg-lightBeige w-full font-Montserrat text-xs"
+      >
+        <div class="flex items-center gap-4">
+          <p class="input_label">Enter your city</p>
+          <label for="city" class="oferta-text-label">
+            <input type="text" id="city" class="oferta-text-input" />
+          </label>
+        </div>
+        <div class="flex items-center gap-4">
+          <p class="input_label">Enter your name</p>
+          <label for="name" class="oferta-text-label">
+            <input type="text" id="name" class="oferta-text-input" required/>
+          </label>
+        </div>
+        <div class="flex items-center gap-4">
+          <p class="input_label">Enter your phone number</p>
+          <label for="phone" class="oferta-text-label">
+            <input type="text" id="phone" class="oferta-text-input" />
+          </label>
+        </div>
+        <div class="flex flex-col items-start gap-4 relative">
+          <p class="input_label">Enter plot square, sq.m.</p>
+          <label for="sqaure" class="range-label">
+            <input
+              type="range"
+              name="sqaure"
+              value="40"
+              min="10"
+              max="200"
+              step="5"
+              class="oferta-range-input"
+            />
+          </label>
+          <input
+            type="text"
+            id="sqaure-user-input"
+            class="text-center oferta-text-input"
+            name="sqaureInpt"
+          />
+        </div>
+        <div class="flex items-center gap-4">
+          <p class="input_label">Pool</p>
+          <label for="pool" class="radio-label radio-label-ctrl"
+            >Yes
+            <input type="radio" name="pool" value="true" class="radio-input" />
+            <div class="indicator"></div>
+          </label>
+          <label for="pool" class="radio-label radio-label-ctrl"
+            >No
+            <input
+              type="radio"
+              name="pool"
+              value="false"
+              class="radio-input"
+              checked
+            />
+            <div class="indicator"></div>
+          </label>
+        </div>
+        <div class="flex items-center gap-4 justify-around">
+          <div class="adds-hard">
+            <p class="input_label">Additionals: hardscape</p>
+            <div class="checkbox-wrap">
+              <input class="oftr-checkbox" name="addons" type="checkbox" value="rocks" />
+              <label class="chckbx-label" for="rocks">Rocks</label>
+            </div>
+            <div class="checkbox-wrap">
+              <input
+                class="oftr-checkbox" name="addons"
+                type="checkbox"
+                value="walls"
+                checked="checked"
+              />
+              <label class="chckbx-label" for="walls">Walls</label>
+            </div>
+            <div class="checkbox-wrap">
+              <input class="oftr-checkbox" name="addons" type="checkbox" value="patios" />
+              <label class="chckbx-label" for="patios">Patios</label>
+            </div>
+            <div class="checkbox-wrap">
+              <input class="oftr-checkbox" name="addons" type="checkbox" value="arbors" />
+              <label class="chckbx-label" for="arbors">Arbors</label>
+            </div>
+          </div>
+          <div class="adds-soft">
+            <p>Additionals: softscape</p>
+            <div class="checkbox-wrap">
+              <input class="oftr-checkbox" name="addons" type="checkbox" value="gardens" />
+              <label class="chckbx-label" for="gardens">Gardens</label>
+            </div>
+            <div class="checkbox-wrap">
+              <input
+                class="oftr-checkbox" name="addons"
+                type="checkbox"
+                value="lawns"
+                checked="checked"
+              />
+              <label class="chckbx-label" for="lawns">Lawns</label>
+            </div>
+            <div class="checkbox-wrap">
+              <input class="oftr-checkbox" name="addons" type="checkbox" value="shrubs" />
+              <label class="chckbx-label" for="shrubs">Shrubs</label>
+            </div>
+            <div class="checkbox-wrap">
+              <input class="oftr-checkbox" name="addons" type="checkbox" value="trees" />
+              <label class="chckbx-label" for="trees">Trees</label>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-start gap-4">
+          <p class="input_label">Leave your comments</p>
+          <label for="comments" class="oferta-text-label"></label>
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="10"
+            placeholder="Please, enter your comments"
+            class="resize-none w-full py-2 px-2 md:py-3 md:px-3 lg:py-4 lg:px-4 rounded-3xl"
+          ></textarea>
+        </div>
+        <div class="form_buttons">
+          <!-- <div class="submit-btn-wrapper">
+            <button class="submit-btn">
+              <span>Submit</span>
+              <div class="success">
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  viewBox="0 0 29.756 29.756"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M29.049,5.009L28.19,4.151c-0.943-0.945-2.488-0.945-3.434,0L10.172,18.737l-5.175-5.173   c-0.943-0.944-2.489-0.944-3.432,0.001l-0.858,0.857c-0.943,0.944-0.943,2.489,0,3.433l7.744,7.752   c0.944,0.943,2.489,0.943,3.433,0L29.049,8.442C29.991,7.498,29.991,5.953,29.049,5.009z"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div> -->
+          <div class="relative flex justify-between" id="form-buttons-wrap">
+            <button class="button-submit" id="button-submit" type="submit">
+              <div class="button-container">
+                <div class="tick"></div>
+              </div>
+            </button>
+            <button class="button-cancel" id="button-close">
+              <div class="button-container">
+                <div class="x-tick"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
