@@ -8,7 +8,7 @@ const currentPage = {
 };
 export let allItems = [];
 export const macyInstance = macy({
-  // See below for all available options.
+ 
   container: refs.gallery,
   mobileFirst: true,
   recalculate: true,
@@ -40,28 +40,16 @@ export const macyInstance = macy({
 });
 
 macyInstance.on(macyInstance.constants.EVENT_IMAGE_COMPLETE, function (ctx) {
-  console.log("all images have loaded");
   macyInstance.recalculate(true);
-  console.log("recalculate");
-
 });
-// macyInstance.on(macyInstance.constants.EVENT_RESIZE, function (ctx) {
-//   console.log("all images resized");
-//   macyInstance.recalculate(true);
-// });
-// macyInstance.runOnImageLoad(function () {
-//   macyInstance.recalculate(true);
-// }, true);
 
 export async function galleryMarkup(queryObject) {
-  console.log('queryObject', typeof(queryObject))
   if (!queryObject.hasOwnProperty('keyWord')) {
     queryObject = {
       keyWord: 'garden',
       page: 1
     }
   }
-  console.log('galleryMarkup fire', queryObject)
   const data = await getImages(queryObject);
   allItems = [...allItems, ...data.hits];
 

@@ -15,7 +15,7 @@ new Splide(refs.splide, {
 		next  : 'splide__arrow--next your-class-next',
   },
 }).mount();
-// window.onload = renderHeroImg;
+
 window.onload = galleryMarkup;
 export function toggleSearch() {
   refs.searchInput.classList.toggle("translate-x-_9999");
@@ -48,6 +48,3 @@ refs.searchForm.addEventListener("submit", searchHandler);
 refs.ofertaLink.forEach(link => {
   link.addEventListener("click", ofertaWindowHandler)
 });
-
-
-console.log('refs.ofertaLink', refs.ofertaLink)

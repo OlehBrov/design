@@ -80,7 +80,7 @@ export function ofertaFormHandler(e) {
   ofertaUserData.additionals = checkedEls;
   ofertaUserData.pool = isPool;
   ofertaUserData.comments = e.target.comments.value;
-  console.log("ofertaUserData", ofertaUserData);
+
 }
 
 export function rangeHandler(e) {

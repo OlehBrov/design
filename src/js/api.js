@@ -1,10 +1,6 @@
 import axios from "axios";
 const key = "33350252-53a75f568ce69e642e03bf7bf";
 const baseURL = "https://pixabay.com/api/";
-// const instance = axios.create({
-//   baseURL: 'https://pixabay.com/api/',
-//  key: '33350252-53a75f568ce69e642e03bf7bf'
-// });
 
 export async function getImages(query) {
   const {data} = await axios

@@ -1,6 +1,5 @@
 import { allItems } from "./gallery";
 import refs from "./refs";
-console.log("allItems", allItems);
 export function showModal(e) {
   e.preventDefault();
   
@@ -23,7 +22,6 @@ export function showModal(e) {
 export function closeModal(e) {
   e.preventDefault();
 
-  console.log("e.target closeModal", e);
   if (e.code === "Escape" || e.type === "click") {
     refs.modalContainer.classList.add("invisible");
     refs.modalContainer.classList.remove("flex");
