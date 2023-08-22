@@ -48,6 +48,7 @@ module.exports = {
         _45: "45px",
         _46: "46px",
         _48: "48px",
+        _59: "59px",
         _60: "60px",
         _64: "64px",
         _72: "72px",
@@ -144,6 +145,7 @@ module.exports = {
       lineHeight: {
         "115%": "1.15",
       },
+    
       transformOrigin: {
         5050: "50% 50%",
       },

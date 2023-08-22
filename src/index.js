@@ -1,13 +1,20 @@
 import "./js/refs";
 import refs from "./js/refs";
-import "./js/slider";
-import "tw-elements";
-import { myCarousel } from "./js/slider";
 import { galleryMarkup, loadMoreGallery } from "./js/gallery";
 import { showModal } from "./js/modal";
 import { inputHandler, searchHandler } from "./js/search";
 import { ofertaWindowHandler } from "./js/oferta";
+import Splide from '@splidejs/splide';
 
+new Splide(refs.splide, {
+    type: 'loop',
+       classes: {
+		arrows: 'splide__arrows hero_buttons-wrap',
+		arrow : 'splide__arrow hero_buttons-arrow',
+		prev  : 'splide__arrow--prev your-class-prev',
+		next  : 'splide__arrow--next your-class-next',
+  },
+}).mount();
 // window.onload = renderHeroImg;
 window.onload = galleryMarkup;
 export function toggleSearch() {
@@ -32,12 +39,6 @@ function toggleMenu() {
 refs.searchBtn.addEventListener("click", toggleSearch);
 refs.hamburgerMenu.addEventListener("click", toggleMenu);
 
-refs.sliderNext.addEventListener("click", () => {
-  myCarousel.next();
-});
-refs.sliderPrev.addEventListener("click", () => {
-  myCarousel.prev();
-});
 refs.loadMoreBtn.addEventListener("click", loadMoreGallery);
 refs.gallery.addEventListener("click", showModal);
 refs.mobileMenuLinks.addEventListener("click", toggleMenu);

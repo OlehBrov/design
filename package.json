@@ -15,6 +15,7 @@
   "author": "SOD",
   "license": "ISC",
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
     "axios": "^1.4.0",
     "buffer": "^6.0.3",
     "macy": "^2.5.1",

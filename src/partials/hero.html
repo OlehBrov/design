@@ -1,198 +1,29 @@
 <div class="flex flex-col-reverse md:flex-row w-full bg-beige">
   <div
-    class="flex md:w-full md:container lg:container xl:container wide:container !pr-0 !ml-0 !mr-0 !max-w-max !pl-0"
+    class="splide flex md:w-full md:container lg:container xl:container wide:container !pr-0 !ml-0 !mr-0 !max-w-max !pl-0"
+    aria-label="Hero slider"
   >
-    <div
-      id="myCarousel"
-      class="relative"
-      data-te-carousel-init
-      data-te-ride="false"
-    >
-      <!--Carousel items-->
-      <div
-        class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
-      >
-        <!--First item-->
-        <div
-          class="relative flex float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-          data-te-carousel-item
-          data-te-carousel-active
-        >
-          <img
-            src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
-            class="block object-cover md:w-1/2"
-            alt="Wild Landscape"
-          />
-          <div
-            class="hero_heading-wrap"
-          >
-            <h1
-              class="hero_h1"
-            >
-              Nowoczesna aranżacja <span class="block"></span> Twojego ogrodu
-            </h1>
-            <p class="hero_heading-text">
-              Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
-              realizacji. Oferujemy kompleksowy zakres usługz indywidualnym
-              podejściem do każdego projektu.
-            </p>
 
-            <ul
-              class="hero_links-list"
-            >
-              <li class="">
-                <a
-                  href="#"
-                  class="hero_links-button"
-                  >Skontaktuj się z nami</a
-                >
-              </li>
-              <li class="">
-                <a
-                  href="#"
-                  class="hero_links-button"
-                  >Zobacz nasze realizacje
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="17"
-                    viewBox="0 0 16 17"
-                    fill="none"
-                    class="inline-block max-md:w-_12 max-md:h-_13"
-                  >
-                    <path
-                      d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"
-                      fill="#1B5B31"
-                    /></svg></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!--Second item-->
-        <div
-          class="relative flex float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-          data-te-carousel-item
-        >
-          <img
-            src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
-            class="block object-cover md:w-1/2"
-            alt="Camera"
-          />
-          <div
-            class="hero_heading-wrap"
-          >
-            <h1 class="hero_h1">
-              Nowoczesna aranżacja Twojego ogrodu
-            </h1>
-            <p class="hero_heading-text">
-              Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
-              realizacji. Oferujemy kompleksowy zakres usługz indywidualnym
-              podejściem do każdego projektu.
-            </p>
+    <div class="splide__arrows">
+            <button
+              class="splide__arrow splide__arrow--prev"
+              type="button">
+              <span class="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="24" viewBox="0 0 27 24" fill="none">
+                  <path
+                    d="M0.795115 10.9393C0.209328 11.5251 0.209328 12.4749 0.795114 13.0607L10.3411 22.6066C10.9268 23.1924 11.8766 23.1924 12.4624 22.6066C13.0482 22.0208 13.0482 21.0711 12.4624 20.4853L3.97709 12L12.4624 3.51472C13.0482 2.92893 13.0482 1.97918 12.4624 1.3934C11.8766 0.80761 10.9268 0.80761 10.3411 1.3934L0.795115 10.9393ZM26.1442 10.5L1.85577 10.5L1.85577 13.5L26.1442 13.5L26.1442 10.5Z"
+                    fill="black" />
+                </svg>
+              </span>
+              
+            </button>
 
-            <ul class="hero_links-list">
-              <li class="">
-                <a
-                  href="#"
-                  class="hero_links-button"
-                  >Skontaktuj się z nami</a
-                >
-              </li>
-              <li class="">
-                <a
-                  href="#"
-                  class="hero_links-button"
-                  >Zobacz nasze realizacje <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none" class="inline-block">
-                    <path
-                      d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"
-                      fill="#1B5B31" />
-                  </svg></a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!--Third item-->
-        <div
-          class="relative flex float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-          data-te-carousel-item
-        >
-          <img
-            src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
-            class="block object-cover md:w-1/2"
-            alt="Exotic Fruits"
-          />
-          <div
-            class="hero_heading-wrap"
-          >
-            <h1 class="hero_h1">
-              Nowoczesna aranżacja Twojego ogrodu
-            </h1>
-            <p class="hero_heading-text">
-              Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
-              realizacji. Oferujemy kompleksowy zakres usługz indywidualnym
-              podejściem do każdego projektu.
-            </p>
-
-            <ul class="hero_links-list">
-              <li class="">
-                <a
-                  href="#"
-                  class="hero_links-button"
-                  >Skontaktuj się z nami</a
-                >
-              </li>
-              <li class="">
-                <a
-                  href="#"
-                  class="hero_links-button"
-                  >Zobacz nasze realizacje <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none" class="inline-block max-md:w-_13 md:h-_14">
-                    <path
-                      d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"
-                      fill="#1B5B31" />
-                  </svg></a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!--Carousel controls - prev item-->
       <button
-        class="absolute bottom-0 max-lg:left-0 lg:right-_48 xl:right-20 max-lg:top-0 lg:bg-lightBeige z-[1] flex w-[15%] lg:w-12 lg:h-12 xl:w-20 xl:h-24 items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 lg:opacity-100 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+        class="splide__arrow splide__arrow--next "
         type="button"
-        data-te-target="#carouselExampleControls"
-        data-te-slide="prev"
+       
       >
-        <span class="inline-block h-8 w-8 lg:flex justify-center items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="27"
-            height="24"
-            viewBox="0 0 27 24"
-            fill="none"
-            
-          >
-            <path
-              d="M0.795115 10.9393C0.209328 11.5251 0.209328 12.4749 0.795114 13.0607L10.3411 22.6066C10.9268 23.1924 11.8766 23.1924 12.4624 22.6066C13.0482 22.0208 13.0482 21.0711 12.4624 20.4853L3.97709 12L12.4624 3.51472C13.0482 2.92893 13.0482 1.97918 12.4624 1.3934C11.8766 0.80761 10.9268 0.80761 10.3411 1.3934L0.795115 10.9393ZM26.1442 10.5L1.85577 10.5L1.85577 13.5L26.1442 13.5L26.1442 10.5Z"
-              fill="black"
-            />
-          </svg>
-        </span>
-        <span
-          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-          >Previous</span
-        >
-      </button>
-      <!--Carousel controls - next item-->
-      <button
-        class="absolute bottom-0 right-0 max-lg:top-0 lg:bg-lightBeige z-[1] flex w-[15%] lg:w-12 lg:h-12 xl:w-20 xl:h-24 items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 lg:opacity-100 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-        type="button"
-        data-te-target="#carouselExampleControls"
-        data-te-slide="next"
-      >
-        <span class="inline-block h-8 w-8 lg:flex justify-center items-center">
+        <span class="">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="27"
@@ -206,11 +37,148 @@
             />
           </svg>
         </span>
-        <span
-          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-          >Next</span
-        >
+        
       </button>
+    </div>
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <div
+            class="relative flex flex-wrap md:flex-nowrap md:flex-row-reverse"
+            
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+              class="block object-cover md:w-1/2"
+              alt="Wild Landscape"
+            />
+            <div class="hero_heading-wrap">
+              <h1 class="hero_h1">
+                Nowoczesna aranżacja <span class="block"></span> Twojego ogrodu
+              </h1>
+              <p class="hero_heading-text">
+                Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+                realizacji. Oferujemy kompleksowy zakres usługz indywidualnym
+                podejściem do każdego projektu.
+              </p>
+
+              <ul class="hero_links-list">
+                <li class="">
+                  <a href="#" class="hero_links-button"
+                    >Skontaktuj się z nami</a
+                  >
+                </li>
+                <li class="">
+                  <a href="#" class="hero_links-button"
+                    >Zobacz nasze realizacje
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="17"
+                      viewBox="0 0 16 17"
+                      fill="none"
+                      class="inline-block max-md:w-_12 max-md:h-_13"
+                    >
+                      <path
+                        d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"
+                        fill="#1B5B31"
+                      /></svg
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div
+            class="relative flex flex-wrap md:flex-nowrap md:flex-row-reverse"
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
+              class="block object-cover md:w-1/2"
+              alt="Camera"
+            />
+            <div class="hero_heading-wrap">
+              <h1 class="hero_h1">Nowoczesna aranżacja Twojego ogrodu</h1>
+              <p class="hero_heading-text">
+                Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+                realizacji. Oferujemy kompleksowy zakres usługz indywidualnym
+                podejściem do każdego projektu.
+              </p>
+
+              <ul class="hero_links-list">
+                <li class="">
+                  <a href="#" class="hero_links-button"
+                    >Skontaktuj się z nami</a
+                  >
+                </li>
+                <li class="">
+                  <a href="#" class="hero_links-button"
+                    >Zobacz nasze realizacje
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="17"
+                      viewBox="0 0 16 17"
+                      fill="none"
+                      class="inline-block"
+                    >
+                      <path
+                        d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"
+                        fill="#1B5B31"
+                      /></svg
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div
+            class="relative flex flex-wrap md:flex-nowrap md:flex-row-reverse"
+            data-te-carousel-item
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+              class="block object-cover md:w-1/2"
+              alt="Exotic Fruits"
+            />
+            <div class="hero_heading-wrap">
+              <h1 class="hero_h1">Nowoczesna aranżacja Twojego ogrodu</h1>
+              <p class="hero_heading-text">
+                Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+                realizacji. Oferujemy kompleksowy zakres usługz indywidualnym
+                podejściem do każdego projektu.
+              </p>
+
+              <ul class="hero_links-list">
+                <li class="">
+                  <a href="#" class="hero_links-button"
+                    >Skontaktuj się z nami</a
+                  >
+                </li>
+                <li class="">
+                  <a href="#" class="hero_links-button"
+                    >Zobacz nasze realizacje
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="17"
+                      viewBox="0 0 16 17"
+                      fill="none"
+                      class="inline-block max-md:w-_13 md:h-_14"
+                    >
+                      <path
+                        d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"
+                        fill="#1B5B31"
+                      /></svg
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </div>

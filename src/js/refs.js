@@ -18,10 +18,8 @@ const refs = {
 
   // Hero
   heroImg: document.querySelector("#myCarousel"),
-  // Hero slider
-  sliderPrev: document.querySelector('button[data-te-slide="next"]'),
-  sliderNext: document.querySelector('button[data-te-slide="prev"]'),
-  sliderItems: document.querySelectorAll("div[data-te-carousel-item]"),
+  splide: document.querySelector('.splide'),
+
   //Projects gallery
   gallery: document.querySelector(".gallery-container"),
   loadMoreBtn: document.querySelector('button[data-action="more"]'),
