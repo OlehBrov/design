@@ -675,6 +675,10 @@ html {
   margin-right: 0px !important;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -972,8 +976,8 @@ html {
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\/images\/about-pic\.png\'\)\] {
-  background-image: url('./images/about-pic.png');
+.bg-\[url\(\'\.\/images\/about\.webp\'\)\] {
+  background-image: url('./images/about.webp');
 }
 
 .bg-gradient-to-t {
@@ -1544,6 +1548,13 @@ html {
   }
 }
 
+@media (min-width: 1024px) {
+  .section_article {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
 /* Buttons*/
 
 .filled_button-link {
@@ -1957,23 +1968,26 @@ html {
 }
 
 .oferta-range-input::-webkit-slider-thumb {
-  margin-top: -0.25rem;
-  height: 1rem;
-  width: 1rem;
+  margin-top: -6px;
+  height: 1.25rem;
+  width: 1.25rem;
   -webkit-appearance: none;
           appearance: none;
-  border-radius: 0.5rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .oferta-range-input:focus::-webkit-slider-thumb {
   outline-width: 2px;
   outline-offset: 1px;
-  outline-color: #fecaca;
+  outline-color: #dc2626;
 }
 
 .radio-label {
   position: relative;
   cursor: pointer;
+  padding-right: 2.25rem;
 }
 
 .radio-label .radio-input {
@@ -1984,10 +1998,10 @@ html {
 
 .indicator {
   position: absolute;
-  top: 2px;
-  left: 0px;
-  height: 20px;
-  width: 20px;
+  top: -2px;
+  left: 40px;
+  height: 24px;
+  width: 24px;
   border-radius: 9999px;
   border-width: 1px;
   --tw-bg-opacity: 1;
@@ -2027,10 +2041,10 @@ html {
 }
 
 .radio-label-ctrl .indicator:after {
-  left: 7px;
-  top: 7px;
-  height: 6px;
-  width: 6px;
+  left: 6px;
+  top: 6px;
+  height: 10px;
+  width: 10px;
   border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -2106,7 +2120,7 @@ html {
 .oftr-checkbox:not(:checked),
 .oftr-checkbox:checked {
   position: absolute;
-  left: -9999px;
+  opacity: 0;
 }
 
 .oftr-checkbox:not(:checked)+.chckbx-label,
@@ -2648,6 +2662,16 @@ html {
   }
 }
 
+@media (max-width: 479px) {
+  .max-\[479px\]\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .max-\[479px\]\:mt-pr50 {
+    margin-top: 50%;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:h-_700 {
     height: 700px;
@@ -2846,6 +2870,10 @@ html {
 
   .lg\:w-auto {
     width: auto;
+  }
+
+  .lg\:w-pr51 {
+    width: 51%;
   }
 
   .lg\:items-center {

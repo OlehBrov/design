@@ -86,7 +86,7 @@
 }
 
 .section_article {
-    @apply font-Inter text-xxs md:text-xs text-justify tracking-semitight
+    @apply font-Inter text-xxs md:text-xs lg:text-16px text-justify lg:leading-normal tracking-semitight
 }
 
 /* Buttons*/
@@ -187,15 +187,15 @@
 }
 
 .oferta-range-input::-webkit-slider-thumb {
-    @apply appearance-none -mt-1 rounded-lg h-4 w-4;
+    @apply -mt-_6 rounded-full h-5 w-5 bg-gray-300 appearance-none;
 }
 
 .oferta-range-input:focus::-webkit-slider-thumb {
-    @apply outline-2 outline-red-200 outline-offset-1;
+    @apply outline-2 outline-red-600 outline-offset-1;
 }
 
 .radio-label {
-    @apply relative cursor-pointer;
+    @apply relative cursor-pointer pr-9;
 }
 
 .radio-label .radio-input {
@@ -203,7 +203,7 @@
 }
 
 .indicator {
-    @apply absolute top-_2 left-0 h-_20 w-_20 bg-gray-500 border rounded-full;
+    @apply absolute -top-_2 left-_40 h-_24 w-_24 bg-gray-500 border rounded-full;
 }
 
 .radio-label:hover .radio-input~.indicator,
@@ -233,7 +233,7 @@
 }
 
 .radio-label-ctrl .indicator:after {
-    @apply left-_7 top-_7 h-_6 w-_6 rounded-full bg-white transition-all duration-300
+    @apply left-_6 top-_6 h-_10 w-_10 rounded-full bg-white transition-all duration-300
 }
 
 .radio-label-ctrl .indicator:before {
@@ -250,7 +250,7 @@
 
 .oftr-checkbox:not(:checked),
 .oftr-checkbox:checked {
-    @apply absolute -left-_9999
+    @apply absolute opacity-0
 }
 
 .oftr-checkbox:not(:checked)+.chckbx-label,

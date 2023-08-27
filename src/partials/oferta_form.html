@@ -34,6 +34,7 @@
             <input
               type="range"
               name="sqaure"
+              id="sqaure"
               value="40"
               min="10"
               max="200"
@@ -50,12 +51,12 @@
         </div>
         <div class="flex items-center gap-4">
           <p class="input_label">Pool</p>
-          <label for="pool" class="radio-label radio-label-ctrl"
+          <label class="radio-label radio-label-ctrl input_label"
             >Yes
-            <input type="radio" name="pool" value="true" class="radio-input" />
+            <input type="radio" name="pool" value="true" class="radio-input"/>
             <div class="indicator"></div>
           </label>
-          <label for="pool" class="radio-label radio-label-ctrl"
+          <label class="radio-label radio-label-ctrl input_label"
             >No
             <input
               type="radio"
@@ -69,9 +70,9 @@
         </div>
         <div class="flex items-center gap-4 justify-around">
           <div class="adds-hard">
-            <p class="input_label">Additionals: hardscape</p>
+            <p class="input_label mb-3">Additionals: hardscape</p>
             <div class="checkbox-wrap">
-              <input class="oftr-checkbox" name="addons" type="checkbox" value="rocks" />
+              <input class="oftr-checkbox" name="addons" type="checkbox" value="rocks" id="rocks"/>
               <label class="chckbx-label" for="rocks">Rocks</label>
             </div>
             <div class="checkbox-wrap">
@@ -79,23 +80,24 @@
                 class="oftr-checkbox" name="addons"
                 type="checkbox"
                 value="walls"
-                checked="checked"
+                id="walls"
+                checked
               />
               <label class="chckbx-label" for="walls">Walls</label>
             </div>
             <div class="checkbox-wrap">
-              <input class="oftr-checkbox" name="addons" type="checkbox" value="patios" />
+              <input class="oftr-checkbox" name="addons" type="checkbox" value="patios" id="patios" />
               <label class="chckbx-label" for="patios">Patios</label>
             </div>
             <div class="checkbox-wrap">
-              <input class="oftr-checkbox" name="addons" type="checkbox" value="arbors" />
+              <input class="oftr-checkbox" name="addons" type="checkbox" value="arbors" id="arbors"/>
               <label class="chckbx-label" for="arbors">Arbors</label>
             </div>
           </div>
           <div class="adds-soft">
-            <p>Additionals: softscape</p>
+            <p class="input_label mb-3">Additionals: softscape</p>
             <div class="checkbox-wrap">
-              <input class="oftr-checkbox" name="addons" type="checkbox" value="gardens" />
+              <input class="oftr-checkbox" name="addons" type="checkbox" value="gardens" id="gardens"/>
               <label class="chckbx-label" for="gardens">Gardens</label>
             </div>
             <div class="checkbox-wrap">
@@ -103,16 +105,17 @@
                 class="oftr-checkbox" name="addons"
                 type="checkbox"
                 value="lawns"
-                checked="checked"
+                id="lawns"
+                checked
               />
               <label class="chckbx-label" for="lawns">Lawns</label>
             </div>
             <div class="checkbox-wrap">
-              <input class="oftr-checkbox" name="addons" type="checkbox" value="shrubs" />
+              <input class="oftr-checkbox" name="addons" type="checkbox" value="shrubs" id="shrubs" />
               <label class="chckbx-label" for="shrubs">Shrubs</label>
             </div>
             <div class="checkbox-wrap">
-              <input class="oftr-checkbox" name="addons" type="checkbox" value="trees" />
+              <input class="oftr-checkbox" name="addons" type="checkbox" value="trees" id="trees"/>
               <label class="chckbx-label" for="trees">Trees</label>
             </div>
           </div>
