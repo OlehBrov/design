@@ -92,6 +92,7 @@ module.exports = {
       translate: {
         120: "120%",
         150: "150%",
+        200: "200%",
         52: "52%",
       },
       transitionDuration: {

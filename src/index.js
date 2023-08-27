@@ -18,7 +18,7 @@ new Splide(refs.splide, {
 
 window.onload = galleryMarkup;
 export function toggleSearch() {
-  refs.searchInput.classList.toggle("translate-x-_9999");
+  refs.searchInput.classList.toggle("translate-x-200");
   refs.searchBtn.classList.toggle("hidden");
 
   if (refs.searchBtn.classList.contains("hidden")) {

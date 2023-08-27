@@ -287,7 +287,7 @@
 
 /* hover style just for information */
 .chckbx-label:hover:before {
-    @apply border-2 border-solid border-green-700 bg-danger-200
+    @apply border-2 border-solid border-green-700 bg-red-400
    
 }
 
